@@ -54,6 +54,7 @@ if (BINDINGS MATCHES "ALL" OR FINDEX GREATER -1)
 		swig_python2
 		swig_python
 		swig_ruby
+		swig_node
 		)
 	set (BINDINGS_FORCE FORCE)
 endif ()

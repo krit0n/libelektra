@@ -19,3 +19,8 @@ list (FIND BINDINGS "swig_ruby" FINDEX)
 if (FINDEX GREATER -1)
 	add_subdirectory (ruby)
 endif ()
+
+list (FIND BINDINGS "swig_node" FINDEX)
+if (FINDEX GREATER -1)
+	add_subdirectory (node)
+endif ()
