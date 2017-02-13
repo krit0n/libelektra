@@ -68,7 +68,7 @@ if [ ! -d "${DIR}/build" ]; then
 	mkdir "${DIR}/build"
 fi
 cd "${DIR}/build"
-cmake -DCMAKE_INSTALL_PREFIX=/usr .. && make -j
+cmake -DCMAKE_INSTALL_PREFIX=/usr .. && make --jobs=$(nproc) --output-sync
 
 if [ -z "${NAME}" ]; then
 	# install elektra ..
